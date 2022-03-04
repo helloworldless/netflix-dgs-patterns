@@ -1,0 +1,17 @@
+type Query {
+    customer(id: ID!): Customer
+}
+
+type Customer {
+    id: ID
+    firstName: String
+    lastName: String
+    orders: [Order]
+}
+
+
+type Order {
+    id: ID
+    total: Float
+    customerId: ID
+}
