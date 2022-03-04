@@ -9,7 +9,6 @@ type Customer {
     orders: [Order]
 }
 
-
 type Order {
     id: ID
     total: Float
